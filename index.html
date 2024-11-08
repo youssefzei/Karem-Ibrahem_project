@@ -1,0 +1,322 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website - Easy Tutorials</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <link rel="icon" href="./images/log.png" type="image/jpeg" sizes="2">
+        <style>
+            #header{
+            width: 100%;
+            height: 100vh;
+                background-image: url(./images/img/سعودي/12.jpg);
+                background-position: right;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment:fixed
+            }
+            .mylog{
+                width:12%;
+                height: 12%;
+            }
+            #toggleButton {
+                padding: 10px 20px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img  class="mylog" src="./images/log.png" alt="">
+                <ul id="sidemenu">
+                    <li >
+                        <i style="color: #f8c34f;" class="fa-solid fa-house"></i>
+                        <a data-key="Home" style=" font-weight: bold; color: #262262; "   href="./index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <i style="color: #f8c34f;" class="fa-solid fa-user"></i>
+                        <a data-key="About" style=" font-weight: bold; color: #262262; "  href="./about.html">
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <i style="color: #f8c34f;" class="fa-solid fa-briefcase"></i>
+                        <a data-key="Experience" style=" font-weight: bold; color: #262262;"  href="./experince.html">
+                            Experience
+                        </a>
+                    </li>
+                    <li>
+                        <i style="color: #f8c34f;" class="fa-solid fa-image"></i>
+                        <a data-key="Gallery" style=" font-weight: bold; color: #262262;"  href="./Gallary.html">
+                            Gallery
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <i style="color: #f8c34f;" class="fa-solid fa-award"></i>
+                        <a data-key="Certificate" style=" font-weight: bold; color: #262262;"  href="./Certificate .html">
+                            Certificate
+                        </a>
+                    </li>
+                    <i class="fas fa-xmark" onclick="closemenu()"></i>
+                    <li>
+                        <i style="color: #f8c34f; " class="fa-solid fa-phone"></i>
+                        <a data-key="Contact" style=" font-weight: bold;color: #262262; "  href="./contact.html">
+                            Contact
+                        </a>
+                    </li>
+                    <button onclick="ScrollToTop()" id="ttpbtn" class="GoToTopButton"><i class="fa-sharp fa-solid fa-arrow-up fa-lg" style="color: #fffbfb;"></i></button>
+                     <button class="GoToTopButto" id="lang-switcher">EN / AR</button>
+                </ul>
+                </h2>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1 data-key="welcome" style="color: #262262;">Hi, I'm <strong>K</strong>arim <strong>I</strong>brahim <strong>El</strong>-Sehrawy .<br> I work as a trainer in business management and all areas related to administration.</h1>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- -----------------------about----------------------------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/img/b.jpg" style="position: relative; bottom: 40px;">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title" data-key="About">About Me</h1>
+                    <p data-key="AP">Marital Status: Single.<br><br> Military Service: completed.<br><br> Date of Birth: January 27th, 1998.<br><br> Nationality: Egyptian.<br></p>
+                
+                    <div class="tab-titles">
+                        <i style="color: #f8c34f; position: relative; top: 5px; padding-right: 5px;" class="fa-solid fa-gear"></i>
+                        <p data-key="Skills" style="font-weight: bold; padding-bottom: 0px;" class="tab-links active-link" onclick="opentab('skills')">
+                            Skills
+                        </p>
+                        <i style="color: #f8c34f; position: relative; top: 5px; padding-right: 5px;" class="fa-solid fa-star"></i>
+                        <p data-key="Objective" style="font-weight: bold;" class="tab-links"onclick="opentab('experience')">
+                            Objectives
+                        </p>
+                        <i style="color: #f8c34f; position: relative; top: 5px; padding-right: 5px;"  class="fa-solid fa-laptop-file"></i>
+                        <p data-key="Educatio" style="font-weight: bold;" class="tab-links"onclick="opentab('educations')">
+                            Educations
+                        </p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li id="proficient">
+                                <span data-key="Computer" style="font-weight: bold;"> ● Computer Skills:- </span>
+                                
+                                <div data-key="proficient">●  proficient user of Windows 11, Microsoft Office (Word, Excel, PowerPoint and outlook).</div>
+                            </li>
+                            <li id="Arabic">
+                                <span data-key="Language" style="font-weight: bold;"> ● Language Skills:- </span>
+                                <div data-key="Arabic">
+                                    ● Arabic: Mother tongue.
+                                </div>
+                                <div data-key="Good">
+                                    ● Good command of English.
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>
+                                <span data-key="Objectives" style="font-weight: bold;"> ● Objectives :- </span>
+                                <br>
+                               <div data-key="Seeking">Seeking a challenging and competitive job opportunity in the teaching field which I can combine all knowledge, experience and abilities.</div><br>
+                               <div data-key="Bachelor">I'am a Bachelor of Commerce, Business Administration major graduate looking to work in a global and highly reputable company, which will benefit from my comprehensive knowledge through my study in Business Administration.</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="educations">
+                        <ul>
+                            <li><span style="font-weight: bold;" data-key="education">● Educations :- </span>
+                            </li>
+                            <li data-key="Business">
+                                ● Bachelor of Business Administration, Faculty of Commerce, Mansoura University, May 2020.
+                            </li>
+                            <li>
+                                <span data-key="Grade" style="font-weight: bold;">● Grade:</span>
+                                <div data-key="Very">● Very Good.</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- --------------------------------experince----------------------------------->
+
+<iv id="services">
+    <div class="container">
+        <h1 data-key="My" class="sub-title">My Experience</h1>
+        <div class="services-list">
+            <div>
+                <!-- <i style="color: #f8c34f;" class="fa-solid fa-user"></i> -->
+                 <img src="./images/uqt.png" alt="" width="20%">
+                <h2 data-key="Umm">Umm Al-Qura Institutes for Training</h2>
+                <p id="the">
+                    <span data-key="day">●Supervising the day-to-day operations of the administrative department and staff members.</span><br>
+                    <span data-key="employees">●training, and evaluating employees and taking corrective action when necessary.</span><br>
+                    <span data-key="all">●Ensuring necessary supplies and that all equipment is working and properly maintained.</span><br>
+                    <span data-key="Plan">●Plan, implement and oversee the work of staff members to ensure efficiency and compliance with organizational requirements and company procedures. Collecting, organizing, and storing information using computers and filing systems.</span><br>
+                    <span data-key="progress">●tracking progress towards company goals.</span><br>
+                    <span data-key="reports">●Preparing reports for the branch</span><br>
+                    <span data-key="tasks">●Distribution of tasks</span><br>
+                    </p>
+                    <a data-key="more" href="./experince.html"  style="color: #ffaf02;"> 
+                        Learn more
+                    </a>
+            </div>
+            <div>
+                <img src="./images/uqt.png" alt="" width="20%">
+                <h2 data-key="Al">Umm Al-Qura Institutes for Training</h2>
+                <p data-key="and">
+                  <span data-key="lectures">●Delivering lectures and presentations on various topics related to commerce and vocational skills.</span><br>
+                  <span data-key="Developing">●Developing curricula and educational materials to meet the needs of trainees.</span><br>
+                  <span data-key="Assessing">●Assessing trainees' performance and providing feedback to enhance their skills.</span><br>
+                  <span data-key="Organizing">●Organizing workshops and practical activities to reinforce applied understanding.</span><br>
+                  <span data-key="Collaborating">●Collaborating with multidisciplinary teams to improve the quality of training programs.</span><br>
+                  <span data-key="Preparing">●Preparing periodic evaluation reports on trainees' progress and presenting them to management.</span><br>
+                  <span data-key="Guiding">●Guiding and mentoring trainees in their career paths and helping them set professional goals.</span><br>
+                  <span data-key="individual">●organizing individual and group training sessions.</span><br>
+                  <span data-key="various">●Providing technical and informational support to trainees on various commercial topics.</span><br>
+                   </p>
+                   <a data-key="more" href="./experince.html"  style="color: #ffaf02;"> 
+                    Learn more
+                </a>
+            </div>
+            <div>
+                <img src="images/vivo.jpg" alt="" width="20%" style="border-radius: 50%;" >
+                <h2 data-key="Vivo">Vivo smart phone trainer</h2>
+                <p id="Plan">
+                    <span data-key="staff">●Plan, implement and oversee the work of staff members to ensure efficiency and compliance with organizational requirements and company procedures.</span><br>
+                    <span data-key="audits">●Conduct ongoing safety audits, meet with individual staff members, attend company safety meetings and participate or direct other work activities designed to promote work safety and encourage continuing education among staff members</span><br>
+                    <span data-key="knowledge">●evaluating the knowledge and skills and the ability of the employees.</span><br>
+                    <span data-key="appropriate">●organizing appropriate training for all staff members.</span><br>
+                    <span data-key="bbbccc">●responsible for train the new employees.</span><br>
+                   </p>
+                  
+                <a data-key="more" href="./experince.html"  style="color: #ffaf02;"> 
+                    Learn more
+                </a>
+            </div>
+        </div>
+    </div>
+    <a id="See" href="./experince.html" class="btn">
+        <i class="fa-solid fa-angles-right"></i>
+        <span data-key="mnmn">See More</span>
+    </a>
+</div>
+
+<!-- ----------------------------------Portfolio--------------------------->
+
+
+<div class="Portfolio">
+    <div class="container">
+        <h1 data-key="Galler" class="sub-title">Gallery</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="./images/img/سعودي/10.jpg">
+                <div class="layer">
+                    <h3>See More</h3>
+                    <a href="./Gallary.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./images/img/سعودي/1.jpg" style="height: 100%;">
+                <div class="layer">
+                    <h3>See More</h3>
+                    <a href="./Gallary.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./images/img/سعودي/14.jpg" style="height: 100%;">
+                <div class="layer">
+                    <h3>See More</h3>
+                    <a href="./Gallary.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+         <a id="See" href="./Gallary.html" class="btn">
+            <i class="fa-solid fa-angles-right"></i>
+            <span data-key="mnmn">See More</span>
+        </a>
+     </div> 
+</div>  
+
+<!-- --------------------------contact------------------------->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title" data-key="Contact">Contact Me</h1>
+                <p>
+                    <i style="color: #f8c34f" class="fa-solid fa-envelope"></i>
+                   <a href="mailto:karimibrahimelsehrawy@gmail.com">karimibrahimelsehrawy@gmail.com</a>
+                </p>
+                <p style="font-size: smaller;">
+                    <i style="color: #f8c34f" class="fa-brands fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/karim-ibrahim-elsehrawy-a77b9217a" target="_blank">https://www.linkedin.com/in/karim-ibrahim-elsehrawy-a77b9217a</a>
+                </p>
+                <p>
+                    <i style="color: #f8c34f" class="fa-solid fa-square-phone"></i>🇪🇬
+                    <a href="tel:+201094288263" target="_blank"> (+20) 1094288263 </a>
+                </p>
+                <p>
+                    <i style="color: #f8c34f" class="fa-solid fa-square-phone"></i>🇸🇦
+                    <a href="tel:++966576419252" target="_blank"> (+966) 576419252 </a>
+                </p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/karimelsehrawy" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.twitter.com/" target="_blank" ><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/karim-ibrahim-elsehrawy-a77b9217a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle btn btn2" data-bs-toggle="dropdown" data-key="CV">Download CV</a>
+                    <div class="dropdown-menu fade-down m-0" style="padding-top: 0; padding-bottom: 0;">
+                        <a id="CV" href="./career/السيرة الذاتية (عربي) (1).pdf" class="btf">تحميل باللغه العربيه</a>
+                        <br>
+                        <a id="CV" href="./career/السيرة الذاتية (انجليزي) (شاملة).pdf" class="btf">Download for English</a>                        
+                    </div>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2" data-key="sub">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="copyright">
+        
+        <p>Copyright © <a href="https://www.facebook.com/profile.php?id=100026018782926 " target="_blank" style="color: #f8c34f; text-decoration: none;" > Eng / Mohamed Sharaf</a></p>
+    </div>
+</div>
+    <script async src='https://whats.stacklix.com/pixel/edec81a9ccd3454a8935979e5ce0b9db'></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	<script src='./script.js'></script>
+</body> 
+</html>

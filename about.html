@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Easy Tutorials</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" href="./images/log.png" type="image/jpeg" sizes="2">
+    <style>
+        .mylog{
+            width:10%;
+            height: 10%;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img  class="mylog" src="./images/log.png" alt="">
+                <ul id="sidemenu">
+                    <li >
+                        <i style="color: #f8c34f;" class="fa-solid fa-house"></i>
+                        <a data-key="Home" style=" font-weight: bold; color: #262262; "   href="./index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <i style="color: #f8c34f;" class="fa-solid fa-user"></i>
+                        <a data-key="About" style=" font-weight: bold; color: #262262; "  href="./about.html">
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <i style="color: #f8c34f;" class="fa-solid fa-briefcase"></i>
+                        <a data-key="Experience" style=" font-weight: bold; color: #262262;"  href="./experince.html">
+                            Experience
+                        </a>
+                    </li>
+                    <li>
+                        <i style="color: #f8c34f;" class="fa-solid fa-image"></i>
+                        <a data-key="Gallery" style=" font-weight: bold; color: #262262;"  href="./Gallary.html">
+                            Gallery
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <i style="color: #f8c34f;" class="fa-solid fa-award"></i>
+                        <a data-key="Certificate" style=" font-weight: bold; color: #262262;"  href="./Certificate .html">
+                            Certificate
+                        </a>
+                    </li>
+                    <i class="fas fa-xmark" onclick="closemenu()"></i>
+                    <li>
+                        <i style="color: #f8c34f; " class="fa-solid fa-phone"></i>
+                        <a data-key="Contact" style=" font-weight: bold;color: #262262; "  href="./contact.html">
+                            Contact
+                        </a>
+                    </li>
+                    <button onclick="ScrollToTop()" id="ttpbtn" class="GoToTopButton"><i class="fa-sharp fa-solid fa-arrow-up fa-lg" style="color: #fffbfb;"></i></button>
+                     <button class="GoToTopButto" id="lang-switcher">EN / AR</button>
+                </ul>
+                </h2>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+    </div>
+
+    <!-- -----------------------about----------------------------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/img/b.jpg" style="position: relative; bottom: 40px;">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title" data-key="About">About Me</h1>
+                    <p data-key="AP">Marital Status: Single.<br><br> Military Service: completed.<br><br> Date of Birth: January 27th, 1998.<br><br> Nationality: Egyptian.<br></p>
+                
+                    <div class="tab-titles">
+                        <i style="color: #f8c34f; position: relative; top: 5px; padding-right: 5px;" class="fa-solid fa-gear"></i>
+                        <p data-key="Skills" style="font-weight: bold; padding-bottom: 0px;" class="tab-links active-link" onclick="opentab('skills')">
+                            Skills
+                        </p>
+                        <i style="color: #f8c34f; position: relative; top: 5px; padding-right: 5px;" class="fa-solid fa-star"></i>
+                        <p data-key="Objective" style="font-weight: bold;" class="tab-links"onclick="opentab('experience')">
+                            Objectives
+                        </p>
+                        <i style="color: #f8c34f; position: relative; top: 5px; padding-right: 5px;"  class="fa-solid fa-laptop-file"></i>
+                        <p data-key="Educatio" style="font-weight: bold;" class="tab-links"onclick="opentab('educations')">
+                            Educations
+                        </p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li id="proficient">
+                                <span data-key="Computer" style="font-weight: bold;"> ● Computer Skills:- </span>
+                                
+                                <div data-key="proficient">●  proficient user of Windows 11, Microsoft Office (Word, Excel, PowerPoint and outlook).</div>
+                            </li>
+                            <li id="Arabic">
+                                <span data-key="Language" style="font-weight: bold;"> ● Language Skills:- </span>
+                                <div data-key="Arabic">
+                                    ● Arabic: Mother tongue.
+                                </div>
+                                <div data-key="Good">
+                                    ● Good command of English.
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>
+                                <span data-key="Objectives" style="font-weight: bold;"> ● Objectives :- </span>
+                                <br>
+                               <div data-key="Seeking">Seeking a challenging and competitive job opportunity in the teaching field which I can combine all knowledge, experience and abilities.</div><br>
+                               <div data-key="Bachelor">I'am a Bachelor of Commerce, Business Administration major graduate looking to work in a global and highly reputable company, which will benefit from my comprehensive knowledge through my study in Business Administration.</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="educations">
+                        <ul>
+                            <li><span style="font-weight: bold;" data-key="education">● Educations :- </span>
+                            </li>
+                            <li data-key="Business">
+                                ● Bachelor of Business Administration, Faculty of Commerce, Mansoura University, May 2020.
+                            </li>
+                            <li>
+                                <span data-key="Grade" style="font-weight: bold;">● Grade:</span>
+                                <div data-key="Very">● Very Good.</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © <a href="https://www.facebook.com/profile.php?id=100026018782926 " target="_blank" style="color: #f8c34f; text-decoration: none;" > Eng / Mohamed Sharaf</a></p>
+    </div>
+</div>
+    <script>document.getElementById("lang-switcher").addEventListener("click", function () {
+        const body = document.body;
+        if (body.getAttribute("dir") === "rtl") {
+            body.setAttribute("dir", "ltr");
+        } else {
+            body.setAttribute("dir", "rtl");
+        }
+    });</script>
+    <script async src='https://whats.stacklix.com/pixel/edec81a9ccd3454a8935979e5ce0b9db'></script>
+	<script src='./script.js'></script>
+</body> 
+</html>
